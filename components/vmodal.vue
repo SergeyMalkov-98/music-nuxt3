@@ -1,6 +1,6 @@
 <template>
   <div v-if="modelValue" class="modal" @click="updateModalValue">
-    <div class="modal__container">
+    <div class="modal__container" :style="{ width: width }">
       <div class="modal__title">
         <span>{{ title }}</span>
       </div>
@@ -32,6 +32,10 @@ export default {
     modelValue: {
       type: Boolean,
       default: false,
+    },
+    width: {
+      type: String,
+      default: "",
     },
   },
   emits: ["update:modelValue"],

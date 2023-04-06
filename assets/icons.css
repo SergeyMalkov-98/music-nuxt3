@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icons-fonts/icomoon.eot?2pmjhx');
-  src:  url('fonts/icons-fonts/icomoon.eot?2pmjhx#iefix') format('embedded-opentype'),
-    url('fonts/icons-fonts/icomoon.ttf?2pmjhx') format('truetype'),
-    url('fonts/icons-fonts/icomoon.woff?2pmjhx') format('woff'),
-    url('fonts/icons-fonts/icomoon.svg?2pmjhx#icomoon') format('svg');
+  src:  url('fonts/icons-fonts/icomoon.eot?i1j4v4');
+  src:  url('fonts/icons-fonts/icomoon.eot?i1j4v4#iefix') format('embedded-opentype'),
+    url('fonts/icons-fonts/icomoon.ttf?i1j4v4') format('truetype'),
+    url('fonts/icons-fonts/icomoon.woff?i1j4v4') format('woff'),
+    url('fonts/icons-fonts/icomoon.svg?i1j4v4#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-delete:before {
+  content: "\e90b";
+}
+.icon-edit:before {
+  content: "\e90c";
+}
+.icon-more:before {
+  content: "\e90d";
+  color: #2e3a59;
+}
+.icon-play:before {
+  content: "\e90e";
+}
 .icon-cancel:before {
   content: "\e90a";
 }

@@ -1,5 +1,5 @@
 <template>
-  <transition @enter="onEnter">
+  <transition @enter="bindOutsideClickListener">
     <div
       v-show="visible"
       ref="containerRef"
@@ -36,12 +36,9 @@ export default {
       document.addEventListener("click", hide);
     };
 
-    const onEnter = () => bindOutsideClickListener();
-
     return {
       visible,
       containerRef,
-      onEnter,
       show,
       hide,
       bindOutsideClickListener,

@@ -10,6 +10,7 @@
       v-model="modals.add"
       title="Новый плейлист"
       description="Придумайте описание"
+      width="400px"
     >
       <template #body>
         <vinput v-model="modals.addName" class="modal__input" show-clear />
@@ -67,12 +68,12 @@
       <context-menu ref="menu">
         <context-menu-item
           label="Переименовать"
-          icon="favorite"
+          icon="edit"
           @click="openModalPlaylist(true, 'edit')"
         />
         <context-menu-item
           label="Удалить"
-          icon="setting"
+          icon="delete"
           @click="openModalPlaylist(true, 'delete')"
         />
       </context-menu>

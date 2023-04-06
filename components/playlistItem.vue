@@ -1,8 +1,9 @@
 <template>
-  <div class="playlist-item" @contextmenu.prevent="contextMenuHandle">
+  <div class="playlist-item">
     <div
       class="playlist-item__container"
       :style="`background: url(/playlists/${playlist.image || 'empty.png'})`"
+      @contextmenu.prevent="contextMenuHandle"
     ></div>
     <div class="playlist-item__info">
       <span class="playlist-item__playlist-title">{{ playlist.title }}</span>
@@ -42,9 +43,6 @@ export default {
     background-position: center !important;
     background-size: cover !important;
     transition: 0.2s;
-    &:hover {
-      filter: brightness(0.3);
-    }
   }
   &__info {
     display: grid;
